@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
   <meta name="description" content="Personal portfolio of Darrin Bracken">
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
   <nav class="nav">
     <div class="container">
@@ -21,10 +23,29 @@
 
   <main class="container">
     <section class="hero">
-      <p class="eyebrow">Hello, I'm</p>
+      <p class="eyebrow">Introduction</p>
       <h1>Darrin <span class="gradient">Bracken</span></h1>
-      <!-- TODO: Replace with your own introduction -->
-      <p class="lead">Write a short introduction about yourself here: who you are, what you do, and what you're passionate about building.</p>
+      <p class="lead">Hello! My name is Darrin,
+        I am currently a Computer Science major at Weber State University. I began my education at Salt Lake Community
+        College in the Computer Science & Information Systems program. After earning my Associate of Science degree, I
+        transferred to Weber State to continue pursuing my Bachelor’s degree in Computer Science.
+
+        During my time at SLCC, I built a strong foundation in programming, networking, data structures, and hands-on
+        technical projects. Some of the programming languages and technologies I worked with included Java, SQL, PHP,
+        HTML, and modest amount of C. I also gained valuable experience working both independently and in team
+        environments while learning Object-Oriented Programming (OOP) principles and strengthening my problem-solving
+        skills. Most importantly, I developed a strong sense of self-determination and curiosity in the work I create.
+
+        Transferring to Weber State was both exciting and intimidating, but it pushed me to grow in ways I never
+        expected. Over the past year, I’ve expanded my experience into full-stack development, scripting, and more
+        advanced database programming. I've worked with technologies such as Visual Studio, VS Code, Github and
+        Microsoft SQL Server. I've learned how to program in C#, MongoDB, and a little bit of Python. I’ve enjoyed
+        applying what I learned to projects while continuing to grow with new tools and concepts.
+
+        I’m passionate about building practical, efficient software and continuing to grow as both a developer and a
+        teammate. I enjoy learning how systems work behind the scenes, solving technical problems, and building
+        technology that have real-world value. As I continue my education and professional development, I’m excited to
+        keep expanding my knowledge in software engineering, full-stack development, and IT systems.</p>
       <a class="btn" href="repositories.html">View my work</a>
       <a class="btn ghost" href="contact.html">Get in touch</a>
     </section>
@@ -32,14 +53,13 @@
     <section id="projects">
       <h2>Projects I've been a part of</h2>
       <div class="grid">
-        <!-- TODO: Replace these placeholders with your real projects -->
         <article class="card">
-          <h3>Project One</h3>
-          <p>A short description of the project and your role in it.</p>
+          <h3>Precision Motorcars, LLC</h3>
+          <p></p>
           <div><span class="tag">HTML</span> <span class="tag">CSS</span></div>
         </article>
         <article class="card">
-          <h3>Project Two</h3>
+          <h3>RoboRacer Diagnostic System</h3>
           <p>A short description of the project and your role in it.</p>
           <div><span class="tag">JavaScript</span></div>
         </article>
@@ -53,27 +73,57 @@
 
     <section id="skills">
       <h2>Skills</h2>
-      <!-- TODO: Edit to match your skills -->
-      <div class="skills">
-        <span class="tag">HTML</span>
-        <span class="tag">CSS</span>
-        <span class="tag">JavaScript</span>
-        <span class="tag">Git &amp; GitHub</span>
+      <div class="skill-rows">
+        <div class="skill-row">
+          <h3>Programming Languages</h3>
+          <div class="skills">
+            <span class="tag">JavaScript</span>
+            <span class="tag">C#</span>
+            <span class="tag">C++</span>
+            <span class="tag">Python</span>
+            <span class="tag">Java</span>
+            <span class="tag">SQL</span>
+          </div>
+        </div>
+        <div class="skill-row">
+          <h3>Databases</h3>
+          <div class="skills">
+            <span class="tag">Microsoft SQL Server</span>
+            <span class="tag">MongoDB</span>
+            <span class="tag">PostgreSQL</span>
+          </div>
+        </div>
+        <div class="skill-row">
+          <h3>Operating Systems</h3>
+          <div class="skills">
+            <span class="tag">Windows</span>
+            <span class="tag">Linux</span>
+          </div>
+        </div>
+        <div class="skill-row">
+          <h3>Concepts</h3>
+          <div class="skills">
+            <span class="tag">OOP</span>
+            <span class="tag">REST APIs</span>
+            <span class="tag">Automation</span>
+            <span class="tag">Agile Development</span>
+          </div>
+        </div>
+        <div class="skill-row">
+          <h3>Tools</h3>
+          <div class="skills">
+            <span class="tag">Git &amp; GitHub</span>
+          </div>
+        </div>
       </div>
     </section>
 
     <section id="experience">
       <h2>Experience</h2>
       <div class="timeline">
-        <!-- TODO: Replace with your real experience -->
         <div class="item">
-          <span class="when">2024 – Present</span>
-          <h3>Job Title · Company</h3>
-          <p>What you did and what you achieved.</p>
-        </div>
-        <div class="item">
-          <span class="when">2022 – 2024</span>
-          <h3>Previous Role · Company</h3>
+          <span class="when">2026 – Present</span>
+          <h3>Web Developer · Precision Motorcars, LLC</h3>
           <p>What you did and what you achieved.</p>
         </div>
       </div>
@@ -83,4 +133,5 @@
   <footer>© <span id="year"></span> Darrin Bracken</footer>
   <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 </body>
+
 </html>
