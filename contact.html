@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Darrin Bracken</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="nav">
+    <div class="container">
+      <a class="logo" href="index.html">Darrin<span>.</span></a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="repositories.html">Repositories</a></li>
+        <li><a class="active" href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section class="hero">
+      <p class="eyebrow">Let's talk</p>
+      <h1>Get in <span class="gradient">touch</span></h1>
+    </section>
+
+    <section>
+      <div class="contact-card">
+        <!-- TODO: Add your photo as photo.jpg in this folder -->
+        <img class="photo" src="photo.jpg" alt="Photo of Darrin Bracken">
+        <div>
+          <h2 style="margin-bottom:4px">Darrin Bracken</h2>
+          <!-- TODO: Replace with your title -->
+          <p class="gradient" style="font-weight:600">Your Job Title</p>
+          <ul class="contact-list">
+            <li><span class="label">Email</span><a href="mailto:dcb.bracken6@gmail.com">dcb.bracken6@gmail.com</a></li>
+            <!-- TODO: Replace with your phone number -->
+            <li><span class="label">Phone</span><a href="tel:+10000000000">(000) 000-0000</a></li>
+            <li><span class="label">GitHub</span><a href="https://github.com/dbrack13">github.com/dbrack13</a></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>© <span id="year"></span> Darrin Bracken</footer>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+</body>
+</html>
