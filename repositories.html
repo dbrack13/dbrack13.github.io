@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Repositories | Darrin Bracken</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav class="nav">
+    <div class="container">
+      <a class="logo" href="index.html">Darrin<span>.</span></a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a class="active" href="repositories.html">Repositories</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section class="hero">
+      <p class="eyebrow">GitHub</p>
+      <h1>My <span class="gradient">Repositories</span></h1>
+      <p class="lead">Public projects pulled live from my GitHub account.</p>
+    </section>
+
+    <section>
+      <p id="repo-status" class="status">Loading repositories…</p>
+      <div id="repo-grid" class="grid"></div>
+    </section>
+  </main>
+
+  <footer>© <span id="year"></span> Darrin Bracken</footer>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  <script src="script.js"></script>
+</body>
+</html>

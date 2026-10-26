@@ -1,17 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <style>
-        body { font-family: sans-serif; text-align: center; padding: 50px; background: #f4f4f9; }
-        h1 { color: #333; }
-        p { color: #666; font-size: 1.2rem; }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Darrin Bracken | Portfolio</title>
+  <meta name="description" content="Personal portfolio of Darrin Bracken">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hello, I'm Darrin Bracken</h1>
-    <p>Welcome to my personal portfolio hosted on GitHub Pages!</p>
+  <nav class="nav">
+    <div class="container">
+      <a class="logo" href="index.html">Darrin<span>.</span></a>
+      <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="repositories.html">Repositories</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main class="container">
+    <section class="hero">
+      <p class="eyebrow">Hello, I'm</p>
+      <h1>Darrin <span class="gradient">Bracken</span></h1>
+      <!-- TODO: Replace with your own introduction -->
+      <p class="lead">Write a short introduction about yourself here: who you are, what you do, and what you're passionate about building.</p>
+      <a class="btn" href="repositories.html">View my work</a>
+      <a class="btn ghost" href="contact.html">Get in touch</a>
+    </section>
+
+    <section id="projects">
+      <h2>Projects I've been a part of</h2>
+      <div class="grid">
+        <!-- TODO: Replace these placeholders with your real projects -->
+        <article class="card">
+          <h3>Project One</h3>
+          <p>A short description of the project and your role in it.</p>
+          <div><span class="tag">HTML</span> <span class="tag">CSS</span></div>
+        </article>
+        <article class="card">
+          <h3>Project Two</h3>
+          <p>A short description of the project and your role in it.</p>
+          <div><span class="tag">JavaScript</span></div>
+        </article>
+        <article class="card">
+          <h3>Project Three</h3>
+          <p>A short description of the project and your role in it.</p>
+          <div><span class="tag">Python</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <!-- TODO: Edit to match your skills -->
+      <div class="skills">
+        <span class="tag">HTML</span>
+        <span class="tag">CSS</span>
+        <span class="tag">JavaScript</span>
+        <span class="tag">Git &amp; GitHub</span>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <div class="timeline">
+        <!-- TODO: Replace with your real experience -->
+        <div class="item">
+          <span class="when">2024 – Present</span>
+          <h3>Job Title · Company</h3>
+          <p>What you did and what you achieved.</p>
+        </div>
+        <div class="item">
+          <span class="when">2022 – 2024</span>
+          <h3>Previous Role · Company</h3>
+          <p>What you did and what you achieved.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>© <span id="year"></span> Darrin Bracken</footer>
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
 </body>
 </html>
