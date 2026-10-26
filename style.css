@@ -87,6 +87,14 @@ h2 { font-size: 1.6rem; letter-spacing: -0.02em; margin-bottom: 24px; }
 .skills { display: flex; flex-wrap: wrap; gap: 10px; }
 .skills .tag { font-size: 0.9rem; padding: 6px 14px; }
 
+.skill-rows { display: grid; gap: 14px; }
+.skill-row {
+  display: grid; grid-template-columns: 200px 1fr; gap: 16px; align-items: center;
+  background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius); padding: 18px 22px;
+}
+.skill-row h3 { font-size: 0.95rem; color: var(--muted); font-weight: 600; }
+@media (max-width: 560px) { .skill-row { grid-template-columns: 1fr; gap: 10px; } }
+
 /* Timeline */
 .timeline { border-left: 2px solid var(--border); padding-left: 24px; display: grid; gap: 28px; }
 .timeline .item { position: relative; }
